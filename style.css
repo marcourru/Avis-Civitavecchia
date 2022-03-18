@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+header {
+   
+    height: 40px;
+    padding: 3px 0 3px 15px;
+}
+
+#logo {
+    height: 100%;
+    vertical-align: middle;
+}
+
+#navigation, #navigation li {
+    display: inline;
+}
+
+#navigation li {
+    margin-right: 15px;
+}
+
+.banner {
+    text-align: center;
+}
+.banner>button {
+    margin: 0 auto;
+    display: block;
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 6px;
+    border: none;
+}
+h1{
+    color: blue;
+
+}
+
+#grid-container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
+.grid-item{
+    width: 150px;
+    aspect-ratio:1;
+    background-color: blue;
+    border-radius: 50%;
+    transition:transform 1s linear;
+}
+
+
+.grid-item:hover{
+    transform:translateX(-100%);
+}
